@@ -28,18 +28,84 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		<style>
+			/* Estilo para a section#versoes em todos os img */
+			#versoes img{
+				border:0;
+				background:0;
+				box-shadow:0;
+			}
+			.project{
+				width: 30%;
+				margin: 1rem !important;
+				float: left;
+				border-radius: 3px;
+				background: #fff;
+				color: #000;
+				display: flex;
+				flex-flow: column;
+			}
+			.project span{
+				padding: 0.6rem 0;
+				font-size: 1.625rem;
+				font-family:
+			}
+			.project-bg{
+				width: 100%;
+				border-radius: 3px 3px 0 0;
+			}
+			.project-bg img{
+				width: 96px;
+				height: 96px;
+				-webkit-box-flex: 0;
+				flex: 0 0 96px;
+				border: 0 !important;
+				background: transparent !important;
+				box-shadow: none !important;
+			}
+			.project-bg#pageshot{
+				background-color: rgb(2, 189, 173);
+				background-image: linear-gradient(135deg, rgb(2, 189, 173), rgb(3, 82, 149));
+			}
+			.project-bg#minvid{
+				background-color: rgb(254, 214, 111);
+				background-image: linear-gradient(135deg, rgb(254, 214, 111), rgb(253, 102, 123));
+			}
+			.project-bg#tracking{
+				background-color: rgb(135, 37, 167);
+				background-image: linear-gradient(135deg, rgb(135, 37, 167), rgb(89, 28, 86));
+			}
+			.project-bg#activity{
+				background-color: rgb(9, 150, 248);
+				background-image: linear-gradient(135deg, rgb(9, 150, 248), rgb(6, 117, 211));
+			}
+			.project-bg#tab{
+				background-color: rgb(242, 88, 32);
+				background-image: linear-gradient(135deg, rgb(242, 88, 32), rgb(215, 64, 18));
+			}
+			.project-bg#no404{
+				background-color: rgb(17, 17, 17);
+				background-image: linear-gradient(135deg, rgb(17, 17, 17), rgb(34, 34, 34));
+			}
+			.project-bg#universal{
+				background-color: rgb(1, 189, 173);
+				background-image: linear-gradient(135deg, rgb(1, 189, 173), rgb(1, 163, 157));
+			}
+		</style>
 	</head>
 
 	<body>
 
-		<div class="reveal" style="background: radial-gradient(ellipse 250% 100% at center 140%,#737ffd 0,#0065b8 50%,#1e4488 100%);">
+		<div class="reveal" style="border-top: 2px solid #fff; background: radial-gradient(ellipse 250% 100% at center 140%,#737ffd 0,#0065b8 50%,#1e4488 100%);">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<div style="position:relative; top:-391px; left:150px;">
+				<!-- Logo Mozilla -->
+				<div style="position:fixed; top:0; left:80vw; z-index: 200;">
 					<img src="design/top-12.png">
 				</div>
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
 
+				<!-- Título -->
 				<section data-background="design/estrelas.png">
 					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt;">Adicione <b>Super Poderes</b> ao<br> seu <b>Firefox</b></span></h1>
 					<p>
@@ -47,10 +113,12 @@
 					</p>
 				</section>
 
+				<!-- Quem somos -->
 				<section data-background="design/estrelas.png">
 					<section>
 						<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt; font-size:250px;"><b>Quem somos?</b></span></h1>
 					</section>
+					<!-- Eduardo Barros -->
 					<section><h2>Eduardo Barros</h2><br>
 						<div style="position:relative; z-index:10; text-align:right; width:690px; top:0; left:-110px; text-align: center;">
 							<img src="design/eduardob.jpg" width="60%" style="border-radius: 50rem;">
@@ -65,6 +133,8 @@
 							</p>
 						</div>
 					</section>
+
+					<!-- João Paulo Polles -->
 					<section><h2>João Paulo Polles</h2><br>
 						<div style="position:relative; z-index:10; text-align:right; width:690px; top:0; left:-110px; text-align: center;">
 							<img src="design/joaopaulo.jpg" width="60%" style="border-radius: 50rem;">
@@ -79,6 +149,8 @@
 							</p>
 						</div>
 					</section>
+
+					<!-- Samuel Moraes -->
 					<section><h2>Samuel Moraes</h2><br>
 						<div style="position:relative; z-index:10; text-align:right; width:690px; top:0; left:-110px; text-align: center;">
 							<img src="design/samuel.png" width="60%" style="border-radius: 50rem;">
@@ -93,169 +165,209 @@
 							</p>
 						</div>
 					</section>
+
+					<!-- Comunidade -->
 					<section><h2>E fazemos parte da</h2><br>
 						<img src="design/profile.png" width="45%" style="background-color: transparent; border:0;" />
 					</section>
 				</section>
 
+				<!-- Mozilla -->
 				<section data-background="design/estrelas.png">
 					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt;">Você conhece a <b>mozilla?</b></span></h1>
 				</section>
 
-				<section data-background="design/fundo_mozilla-36.png">
+				<section data-background="design/estrelas.png">
 					<p style="font-size:50px;">Somos orgulhosamente</p>
 					<h1>SEM FINS LUCRATIVOS!</h1>
 					<p>Assim, somos livres para inovar em seu nome sem a pressão de compromisso com investidores ou organizações.</p>
 				</section>
 
-				<section data-background="design/fundo_mozilla-36.png">
+				<!-- Firefox -->
+				<section data-background="design/estrelas.png">
 					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt; font-size:250px;"><b>Firefox</b></span></h1>
 				</section>
 
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt; font-size:200px;"><b>Thunderbird</b></span></h1>
-				</section>
-
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt; font-size:200px;"><b>Webmaker</b></span></h1>
-				</section>
-
-				<section data-background="design/back-11.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -4pt; line-height: 50px; font-size: 80px;"><b>A nossa maior criação...</b></span></h1>
-				</section>
-
-				<section data-background="design/back-11.png">
-					<div style="position:relative; z-index:20; top:0; left:-5%; background-image:url(design/logo-14.png); background-position:center; background-repeat:no-repeat; width:110%; height:318px;">
+				<!-- Estatísticas -->
+				<section data-background="design/estrelas.png">
+					<style scoped>
+						h2{
+								margin-bottom: 2rem;
+						}
+						.browsers{
+							display: flex;
+							justify-content: center;
+							align-content: center;
+						}
+						.browser{
+							display: flex;
+							flex-flow: column;
+							align-items: center;
+							padding: 0 1.5rem;
+							text-align: center;
+						}
+						img{
+							border: 0;
+							background: transparent;
+							box-shadow: none;
+						}
+					</style>
+					<h2>Estatísticas</h2>
+					<div class="browsers">
+						<div class="browser">
+							<img src="design/chrome.png" width="100px" />
+							Chrome<br>62%</div>
+						<div class="browser">
+							<img src="design/firefox.png" width="100px" />
+							<b>Firefox<br>16%</b></div>
+						<div class="browser">
+							<img src="design/ie.png" width="100px" />
+							IE & Edge<br> 12%</div>
+						<div class="browser">
+							<img src="design/safari.png" width="100px" />
+							Safari<br>5%</div>
+						<div class="browser">
+							<img src="design/opera.png" width="100px" />
+							Opera<br>2%</div>
 					</div>
 				</section>
 
-				<section data-background="design/back-11.png">
-					<div style="position:relative; z-index:10; text-align:right; width:690px; top:230px; left:-110px;">
-						<h2>Uma plataforma livre</h2>
-						<h2>Focada nas pessoas</h2>
-						<h2>Feita por você</h2>
-					</div>
-					<div style="position:relative; z-index:2; top:-200px; left:590px; background-image:url(design/foxy.png); background-position:center; background-repeat:no-repeat; width:469PX; height:592px;">
-					</div>
+				<!-- Objetivo -->
+				<section data-background="design/estrelas.png">
+					<h2>Objetivo</h2>
+
 				</section>
 
-				<section data-background="design/back-11.png">
+				<!-- O que está por vir -->
+				<section data-background="design/estrelas.png">
+					<h2>O que está por vir</h2>
+					<p class="fragment">08 de Novembro -> Lançamento do Firefox 50</p>
+
+				</section>
+
+				<!-- Versões -->
+				<section data-background="design/estrelas.png" id="versoes">
+					<section><h2>Versões</h2></section>
+
+					<!-- Estável -->
 					<section>
-						<h2>Onde está presente</h2>
-						<p>Qual é o futuro da plataforma móvel que vai mudar a forma com que as pessoas usam a web nos gadgets</p>
-						<ol>
-							<li class="fragment">
-								<div style="position:relative; height:60px; width:500px; text-align:center; display:inline-block; background:#FFF; padding:20px; margin-bottom:20px;">
-									<h2 style="color:#00539F !important;">SMARTPHONES</h2>
-								</div>
-								<br>
-							</li>
-							<li class="fragment">
-								<div style="position:relative; height:60px; width:500px; text-align:center; display:inline-block; background:#FFF; padding:20px; margin-bottom:20px;">
-									<h2 style="color:#00539F !important;">TABLETS</h2>
-								</div>
-								<br>
-							</li>
-							<li class="fragment">
-								<div style="position:relative; height:60px; width:500px; text-align:center; display:inline-block; background:#FFF; padding:20px; margin-bottom:20px;">
-									<h2 style="color:#00539F !important;">PC'S</h2>
-								</div>
-								<br>
-							</li>
-							<li class="fragment">
-								<div style="position:relative; height:60px; width:500px; text-align:center; display:inline-block; background:#FFF; padding:20px; margin-bottom:20px;">
-									<h2 style="color:#00539F !important;">TELEVISÕES</h2>
-								</div>
-							</li>
-						</ol>
+						<img src="design/estavel.png" width="500px" /><br/>
+						<h3 style="font-family:metanormal_roman;"><b>Firefox</b> 49</h3>
+					</section>
+
+					<!-- Beta -->
+					<section>
+						<img src="design/beta.png" width="500px" />
+						<h3 style="font-family:metanormal_roman;"><b>Firefox</b> Beta 50</h3>
+					</section>
+
+					<!-- Firefox Developer Edition -->
+					<section>
+						<img src="design/developer.png" width="500px" />
+						<h3 style="font-family:metanormal_roman;"><b>Firefox</b> <i>Developer Edition</i> 51</h3>
+					</section>
+
+					<!-- Aurora -->
+					<section>
+						<img src="design/aurora.png" width="400px" />
+						<h3 style="font-family:metanormal_roman;"><b>Firefox</b> Aurora 51</h3>
+					</section>
+
+					<!-- Nightly -->
+					<section>
+						<img src="design/nightly.png" width="500px" />
+						<h3 style="font-family:metanormal_roman;"><b>Firefox</b> Nightly 52</h3>
 					</section>
 				</section>
 
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt; font-size:150px;">Nós precisamos <br>de você!</span></h1>
+				<!-- Complementos -->
+				<section data-background="design/estrelas.png">
+					<h2>Complementos</h2>
+
 				</section>
 
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt;"><b>SUMO</b><br>Suporte Mozilla</span></h1>
+				<!-- Complementos -->
+				<section data-background="design/estrelas.png">
+					<p>Nas versões Beta, Developer Edition/Aurora e Nightly são desenvolvidas
+						e testadas novas funcionalidades que um dia estarão na versão estável do
+						navegador.</p>
+					<p class="fragment">Existem experimentos que podem trazer muito ao navegador e precisam de
+					sua ajuda para o desenvolvimento e decisão se irão implementar no firefox.</p>
+
 				</section>
 
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt;">Tradução <br>de conteúdo</span></h1>
+				<!-- Firefox Test Pilot -->
+				<section data-background="design/estrelas.png">
+					<h1 style="font-family:metanormal_roman;"><b>Firefox</b> Test Pilot</h1>
+
 				</section>
 
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt;">Organização<br> de eventos</span></h1>
+				<!-- Projetos -->
+				<section data-background="design/estrelas.png">
+					<div style="width: 100%; display: flex; justify-content: center; align-content: center; flex-flow: row wrap;">
+						<div class="project">
+							<div class="project-bg" id="pageshot">
+								<img src="design/pageshot.png" />
+							</div>
+							<span>Page Shot</span>
+						</div>
+
+						<div class="project">
+							<div class="project-bg" id="minvid">
+								<img src="design/minvid.png" />
+							</div>
+							<span>Mini Vid</span>
+						</div>
+
+						<div class="project">
+							<div class="project-bg" id="tracking">
+								<img src="design/tracking.png" />
+							</div>
+							<span>Tracking Protection</span>
+						</div>
+
+						<div class="project">
+							<div class="project-bg" id="activity">
+								<img src="design/activity.png" />
+							</div>
+							<span>Activity Stream</span>
+						</div>
+
+						<div class="project">
+							<div class="project-bg" id="tab">
+								<img src="design/tab.png" />
+							</div>
+							<span>Tab Center</span>
+						</div>
+
+						<div class="project">
+							<div class="project-bg" id="no404">
+								<img src="design/no404.png" />
+							</div>
+							<span>No More 404s</span>
+						</div>
+
+						<div class="project">
+							<div class="project-bg" id="universal">
+								<img src="design/universal.png" />
+							</div>
+							<span>Universal Search</span>
+						</div>
+					</div>
 				</section>
 
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt; font-size:150px;">Palestras</span></h1>
-				</section>
-
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt;">Desenvolvimento</br> de código</span></h1>
-				</section>
-
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt;">Então, como ajudar?</span></h1>
-				</section>
-
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt; font-size:150px;">Instalando<br> o Firefox =)</span></h1>
-				</section>
-
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -7pt; font-size:110px;">Espalhando o conteúdo<br> desta palestra</span></h1>
-				</section>
-
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -7pt; font-size:110px;">Ajudando usuários do mundo todo via twitter</span></h1>
-				</section>
-
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -7pt; font-size:120px;">Traduzindo artigos de desenvolvimento<br> e suporte</span></h1>
-				</section>
-
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -7pt; font-size:120px;">Participando da nossa<br> lista de e-mails</span></h1>
-				</section>
-
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -7pt; font-size:110px;">Reportando críticas, erros <br>e sugestões no Bugzilla</span></h1>
-				</section>
-
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -7pt; font-size:120px;">Fazendo eventos<br> na sua região</span></h1>
-				</section>
-
-				<section data-background="design/fundo_mozilla-36.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -7pt; font-size:120px;">Lutando conosco para que a web não tenha donos</span></h1>
-				</section>
-
-				<section data-background="design/fundo_mozilla-36.png">
+				<section data-background="design/estrelas.png">
 					<h1>Alguns Links</h1>
 					<p>
 						Mozilla - www.mozilla.org<br>
 						Mozilla Brasil - www.mozillabrasil.org<br>
-						FB | Mozilla Brasil - www.fb.com/mozillabrasil<br>
-						Mozilla Developer Network - developer.mozilla.org<br>
-						Mobilizers Brasil - www.fb.com/groups/mobilizerbrasil/<br>
-						SUMO - support.mozilla.org/pt-BR/home/<br>
 						<span style="font-size:27px;">SUMO - Exército dos Incríveis - support.mozilla.org/pt-BR/get-involved/army-of-awesome</span><br>
 						Reveal.JS - github.com/hakimel/reveal.js<br>
 					</p>
 				</section>
 
-				<section data-background="design/back-11.png">
+				<section data-background="design/estrelas.png">
 					<h1>POROJÉSÓ!</h1><br>
-					<h3 style="letter-spacing:-1pt;">Eduardo Barros</h3>
-					<p>
-						www.noibe.com<br><br>
-
-						Mozillian | http://mozillians.org/pt-BR/u/du.barros/<br>
-						Mozilla Wiki | https://wiki.mozilla.org/User:Du.barros<br>
-						Skype | du.barros - Tel | 43 - 9975-2470<br>
-						E-Mail | eduardo@noibe.com
-					</p>
 				</section>
 
 			</div>
