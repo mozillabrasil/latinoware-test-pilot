@@ -1,609 +1,609 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 
-		<title>Adicione Super Poderes ao seu Firefox</title>
+	<title>Adicione Super Poderes ao seu Firefox</title>
 
-		<meta name="description" content="">
-		<meta name="author" content="Eduardo Barros e João Paulo Polles">
+	<meta name="description" content="">
+	<meta name="author" content="Eduardo Barros e João Paulo Polles">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+	<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+	<script>
+		document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+	</script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-		<style>
-			/* Estilo para a section#versoes em todos os img */
-			#versoes img{
-				border:0;
-				background:0;
-				box-shadow:0;
-			}
-			.project{
-				width: 30%;
-				margin: 1rem !important;
-				float: left;
-				border-radius: 3px;
-				background: #fff;
-				color: #000;
-				display: flex;
-				flex-flow: column;
-			}
-			.project span{
-				padding: 0.6rem 0;
-				font-size: 1.625rem;
-			}
-			.project-bg{
-				width: 100%;
-				border-radius: 3px 3px 0 0;
-			}
-			.project-bg img{
-				width: 96px;
-				height: 96px;
-				-webkit-box-flex: 0;
-				flex: 0 0 96px;
-				border: 0 !important;
-				background: transparent !important;
-				box-shadow: none !important;
-			}
-			.project-bg--pageshot{
-				background-color: rgb(2, 189, 173);
-				background-image: linear-gradient(135deg, rgb(2, 189, 173), rgb(3, 82, 149));
-			}
-			.project-bg--minvid{
-				background-color: rgb(254, 214, 111);
-				background-image: linear-gradient(135deg, rgb(254, 214, 111), rgb(253, 102, 123));
-			}
-			.project-bg--tracking{
-				background-color: rgb(135, 37, 167);
-				background-image: linear-gradient(135deg, rgb(135, 37, 167), rgb(89, 28, 86));
-			}
-			.project-bg--activity{
-				background-color: rgb(9, 150, 248);
-				background-image: linear-gradient(135deg, rgb(9, 150, 248), rgb(6, 117, 211));
-			}
-			.project-bg--tab{
-				background-color: rgb(242, 88, 32);
-				background-image: linear-gradient(135deg, rgb(242, 88, 32), rgb(215, 64, 18));
-			}
-			.project-bg--no404{
-				background-color: rgb(17, 17, 17);
-				background-image: linear-gradient(135deg, rgb(17, 17, 17), rgb(34, 34, 34));
-			}
-			.project-bg--universal{
-				background-color: rgb(1, 189, 173);
-				background-image: linear-gradient(135deg, rgb(1, 189, 173), rgb(1, 163, 157));
-			}
-		</style>
-	</head>
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+	<style>
+		/* Estilo para a section#versoes em todos os img */
+		#versoes img{
+			border:0;
+			background:0;
+			box-shadow:0;
+		}
+		.project{
+			width: 30%;
+			margin: 1rem !important;
+			float: left;
+			border-radius: 3px;
+			background: #fff;
+			color: #000;
+			display: flex;
+			flex-flow: column;
+		}
+		.project span{
+			padding: 0.6rem 0;
+			font-size: 1.625rem;
+		}
+		.project-bg{
+			width: 100%;
+			border-radius: 3px 3px 0 0;
+		}
+		.project-bg img{
+			width: 96px;
+			height: 96px;
+			-webkit-box-flex: 0;
+			flex: 0 0 96px;
+			border: 0 !important;
+			background: transparent !important;
+			box-shadow: none !important;
+		}
+		.project-bg--pageshot{
+			background-color: rgb(2, 189, 173);
+			background-image: linear-gradient(135deg, rgb(2, 189, 173), rgb(3, 82, 149));
+		}
+		.project-bg--minvid{
+			background-color: rgb(254, 214, 111);
+			background-image: linear-gradient(135deg, rgb(254, 214, 111), rgb(253, 102, 123));
+		}
+		.project-bg--tracking{
+			background-color: rgb(135, 37, 167);
+			background-image: linear-gradient(135deg, rgb(135, 37, 167), rgb(89, 28, 86));
+		}
+		.project-bg--activity{
+			background-color: rgb(9, 150, 248);
+			background-image: linear-gradient(135deg, rgb(9, 150, 248), rgb(6, 117, 211));
+		}
+		.project-bg--tab{
+			background-color: rgb(242, 88, 32);
+			background-image: linear-gradient(135deg, rgb(242, 88, 32), rgb(215, 64, 18));
+		}
+		.project-bg--no404{
+			background-color: rgb(17, 17, 17);
+			background-image: linear-gradient(135deg, rgb(17, 17, 17), rgb(34, 34, 34));
+		}
+		.project-bg--universal{
+			background-color: rgb(1, 189, 173);
+			background-image: linear-gradient(135deg, rgb(1, 189, 173), rgb(1, 163, 157));
+		}
+	</style>
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal" style="border-top: 2px solid #fff; background: radial-gradient(ellipse 250% 100% at center 140%,#737ffd 0,#0065b8 50%,#1e4488 100%);">
+<div class="reveal" style="border-top: 2px solid #fff; background: radial-gradient(ellipse 250% 100% at center 140%,#737ffd 0,#0065b8 50%,#1e4488 100%);">
 
-				<!-- Logo Mozilla -->
-				<div style="position:fixed; top:0; left:80vw; z-index: 200;">
-					<img src="design/top-12.png">
+	<!-- Logo Mozilla -->
+	<div style="position:fixed; top:0; left:80vw; z-index: 200;">
+		<img src="design/top-12.png">
+	</div>
+	<!-- Any section element inside of this container is displayed as a slide -->
+	<div class="slides">
+
+		<!-- Título -->
+		<section data-background="design/estrelas.png">
+			<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt;">Adicione <b>Super Poderes</b> ao<br> seu <b>Firefox</b></span></h1>
+			<p>
+				<small>Apresentação criada pela Comunidade Mozilla Brasil</small>
+			</p>
+		</section>
+
+		<!-- Quem somos -->
+		<section data-background="design/estrelas.png">
+			<style scoped>
+				.left, .right{
+					width: 50%;
+					min-height: 400px;
+				}
+				.left img, .right img{
+					width: 100%;
+				}
+				.left{
+					float: left;
+				}
+				.right{
+					float: right;
+				}
+			</style>
+			<section>
+				<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt; font-size:250px;"><b>Quem somos?</b></span></h1>
+			</section>
+
+			<!-- Eduardo Barros -->
+			<section><h2>Eduardo Barros</h2><br>
+				<div class="left">
+					<img src="design/eduardob.jpg" style="border-radius: 50rem;">
 				</div>
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-
-				<!-- Título -->
-				<section data-background="design/estrelas.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt;">Adicione <b>Super Poderes</b> ao<br> seu <b>Firefox</b></span></h1>
+				<div class="right">
 					<p>
-						<small>Apresentação criada pela Comunidade Mozilla Brasil</small>
+						Mozillian <br/>
+						CTO na Elbit Digital <br/>
+						Tem um caso de amor com HTML + CSS + JS <br/>
+						Entusiasta de Software Livre
 					</p>
-				</section>
+				</div>
+			</section>
 
-				<!-- Quem somos -->
-				<section data-background="design/estrelas.png">
-					<style scoped>
-						.left, .right{
-							width: 50%;
-							min-height: 400px;
-						}
-						.left img, .right img{
-							width: 100%;
-						}
-						.left{
-							float: left;
-						}
-						.right{
-							float: right;
-						}
-					</style>
-					<section>
-						<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt; font-size:250px;"><b>Quem somos?</b></span></h1>
-					</section>
-					
-					<!-- Eduardo Barros -->
-					<section><h2>Eduardo Barros</h2><br>
-						<div class="left">
-							<img src="design/eduardob.jpg" style="border-radius: 50rem;">
-						</div>
-						<div class="right">
-							<p>
-								Mozillian <br/>
-								CTO na Elbit Digital <br/>
-								Tem um caso de amor com HTML + CSS + JS <br/>
-								Entusiasta de Software Livre
-							</p>
-						</div>
-					</section>
-
-					<!-- João Paulo Polles -->
-					<section><h2>João Paulo Polles</h2><br>
-						<div class="left">
-							<img src="design/joaopaulo.jpg" style="border-radius: 50rem;">
-						</div>
-						<div class="right">
-							<p>
-								Técnico em Informática, Acadêmico em Tecnologia em Análise e Desenvolvimento de Sistemas na UNIVEL, Desenvolvedor Web Há mais de 5 anos, Entusiasta do Software e Hardware Livre.
-								Atualmente é voluntário na Mozilla e na TvCvel e bolsista desenvolvedor em um projeto na Fundetec em Cascavel/PR.
-
-							</p>
-						</div>
-					</section>
-
-					<!-- Comunidade -->
-					<section><h2>E fazemos parte da</h2><br>
-						<img src="design/profile.png" width="45%" style="background-color: transparent; border:0;" />
-					</section>
-				</section>
-
-				<!-- Mozilla -->
-				<section data-background="design/estrelas.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt;">Você conhece a <b>mozilla?</b></span></h1>
-				</section>
-
-				<section data-background="design/estrelas.png">
-					<p style="font-size:50px;">Somos orgulhosamente</p>
-					<h1>SEM FINS<br>LUCRATIVOS!</h1>
-					<p>Assim, somos livres para inovar em seu nome sem a pressão de compromisso com investidores ou organizações.</p>
-				</section>
-
-				<!-- Firefox -->
-				<section data-background="design/estrelas.png">
-					<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt; font-size:250px;"><b>Firefox</b></span></h1>
-				</section>
-
-				<!-- Estatísticas -->
-				<section data-background="design/estrelas.png">
-					<style scoped>
-						h2{
-								margin-bottom: 2rem;
-						}
-						.browsers{
-							display: flex;
-							justify-content: center;
-							align-content: center;
-						}
-						.browser{
-							display: flex;
-							flex-flow: column;
-							align-items: center;
-							padding: 0 1.5rem;
-							text-align: center;
-						}
-						img{
-							border: 0;
-							background: transparent;
-							box-shadow: none;
-						}
-					</style>
-					<h2>Estatísticas</h2>
-					<div class="browsers">
-						<div class="browser">
-							<img src="design/chrome.png" width="100px" />
-							Chrome<br>62%</div>
-						<div class="browser">
-							<img src="design/firefox.png" width="100px" />
-							<b>Firefox<br>16%</b></div>
-						<div class="browser">
-							<img src="design/ie.png" width="100px" />
-							IE & Edge<br> 12%</div>
-						<div class="browser">
-							<img src="design/safari.png" width="100px" />
-							Safari<br>5%</div>
-						<div class="browser">
-							<img src="design/opera.png" width="100px" />
-							Opera<br>2%</div>
-					</div>
-				</section>
-
-				<!-- Objetivo -->
-				<section data-background="design/estrelas.png">
-					<h2 style="font-family: metanormal_roman">Internet <b>para as pessoas</b>, sem lucro.</h2>
-
-				</section>
-
-				<!-- O que está por vir -->
-				<section data-background="design/estrelas.png">
-					<h2>O que está por vir</h2>
-					<h3 class="fragment">Firefox 50</h3>
-					<ul>
-						<li class="fragment">Suporte a pesquisa de palavras inteiras no "Localizar na Página", vulgo Ctrl+F.</li>
-						<li class="fragment">Opção de configuração do Ctrl+Tab para alterar entre as abas recentemente utilizada.</li>
-						<li class="fragment">Melhorias na impressão no modo leitura.</li>
-						<li class="fragment">O Firefox irá mostrar um icone de um cadeado tachado caso a página possua campos de senhas inseguros.</li>
-						<li class="fragment">Emoji para todos! O Firefox irá usar Emojis embutidos ao navegador em navegadores sem fontes de Emoji nativos(Linux e Windows 8 e suas versões anteriores)</li>
-					</ul>
-
-				</section>
-
-				<!-- Versões -->
-				<section data-background="design/estrelas.png" id="versoes">
-					<style scoped>
-						img{
-							box-shadow: none;
-						}
-					</style>
-					<section><h2>Versões</h2></section>
-
-					<!-- Estável -->
-					<section>
-						<img src="design/estavel.png" width="500px" /><br/>
-						<h3 style="font-family:metanormal_roman;"><b>Firefox</b> 49</h3>
-					</section>
-
-					<!-- Beta -->
-					<section>
-						<img src="design/beta.png" width="500px" />
-						<h3 style="font-family:metanormal_roman;"><b>Firefox</b> Beta 50</h3>
-					</section>
-
-					<!-- Firefox Developer Edition -->
-					<section>
-						<img src="design/developer.png" width="500px" />
-						<h3 style="font-family:metanormal_roman;"><b>Firefox</b> <i>Developer Edition</i> 51</h3>
-					</section>
-
-					<!-- Aurora -->
-					<section>
-						<img src="design/aurora.png" width="400px" />
-						<h3 style="font-family:metanormal_roman;"><b>Firefox</b> Aurora 51</h3>
-					</section>
-
-					<!-- Nightly -->
-					<section>
-						<img src="design/nightly.png" width="500px" />
-						<h3 style="font-family:metanormal_roman;"><b>Firefox</b> Nightly 52</h3>
-					</section>
-				</section>
-
-				<!-- Complementos -->
-				<section data-background="design/estrelas.png">
-					<section>
-						<h2>Complementos</h2>
-						<p class="fragment">Uma forma de adicionar novas funcionalidades no Firefox.</p>
-					</section>
-					<section>
-						<h2>Algumas indicações de<br>Complementos...</h2>
-						<ul>
-							<li class="fragment">AdBlock Plus</li>
-							<li class="fragment">Lightbeam</li>
-							<li class="fragment">FireFTP</li>
-							<li class="fragment">PixelZoomer</li>
-							<li class="fragment">Empty Cache Button</li>
-							<li class="fragment">RescueTime</li>
-						</ul>
-					</section>
-				</section>
-
-				<!-- Complementos -->
-				<section data-background="design/estrelas.png">
-					<p>Nas versões Beta, Developer Edition/Aurora e Nightly são desenvolvidas
-						e testadas novas funcionalidades que um dia estarão na versão estável do
-						navegador.</p>
-					<p class="fragment">Existem experimentos que podem trazer muito ao navegador e precisam de
-					sua ajuda para o desenvolvimento e decisão se irão implementar no firefox/desenvolver um complemento.</p>
-
-				</section>
-
-				<!-- Firefox Test Pilot -->
-				<section data-background="design/estrelas.png">
-					<h1 style="font-family:metanormal_roman;"><b>Firefox</b> Test Pilot</h1>
-
-				</section>
-
-				<!-- Firefox Test Pilot -->
-				<section data-background="design/estrelas.png">
-					<h2 style="font-family:metanormal_roman;"><b>O que é?</b></h2>
-					<ul>
-						<li class="fragment">Teste de Possíveis Novas Funcionalidades</li>
-						<li class="fragment">Essas funcionalidades podem ou não serem implementadas no Firefox</li>
-						<li class="fragment">Por isso que sua opinião é importante!</li>
-					</ul>
-				</section>
-
-				<!-- Projetos -->
-				<section data-background="design/estrelas.png">
-					<style scoped>
-						h1,h2,h3{
-							font-family: metanormal_roman;
-							font-weight: bold;
-						}
-					</style>
-					<section>
-						<h2>Vamos aos projetos!</h2>
-					</section>
-					<!-- Page Shot -->
-					<section>
-						<div class="left">
-							<div class="project">
-								<div class="project-bg project-bg--pageshot">
-									<img src="design/pageshot.png" />
-								</div>
-								<span>Page Shot</span>
-							</div>
-						</div>
-						<div class="right">
-							<h3><b>Capture sua tela!</b></h3>
-							<p>Capture sua tela ou parte dela com uma ferramenta intuitiva e simples.</p>
-						</div>
-					</section>
-					<!-- Min Vid -->
-					<section>
-						<div style="left">
-							<div class="project">
-								<div class="project-bg project-bg--minvid">
-									<img src="design/minvid.png" />
-								</div>
-								<span>Min Vid</span>
-							</div>
-						</div>
-						<div class="right">
-							<h3><b>Assista a vídeos em qualquer página!</b></h3>
-							<p>Assista a vídeos do YouTube e Vímeo em qualquer página que você estiver.</p>
-						</div>
-					</section>
-					<!-- Tracking Protection -->
-					<section>
-						<div class="left">
-							<div class="project">
-								<div class="project-bg project-bg--tracking">
-									<img src="design/tracking.png" />
-								</div>
-								<span>Tracking Protection</span>
-							</div>
-						</div>
-						<div class="right">
-							<h3><b>Proteção contra rastreamento</b></h3>
-							<p>A proteção que estava presente no modo de navegação privado agora em todas as páginas.</p>
-						</div>
-					</section>
-					<!-- Activity Stream -->
-					<section>
-						<div class="left">
-							<div class="project">
-								<div class="project-bg project-bg--activity">
-									<img src="design/activity.png" />
-								</div>
-								<span>Activity Stream</span>
-							</div>
-						</div>
-						<div class="right">
-							<h3><b>Uma nova página inicial</b></h3>
-							<p>Uma página inicial reimaginada com seu histórico de acesso, deixando uma forma fácil de encontrar exatamente o que você procura.</p>
-						</div>
-					</section>
-					<!-- Tab Center -->
-					<section>
-						<div class="left">
-							<div class="project">
-								<div class="project-bg project-bg--tab">
-									<img src="design/tab.png" />
-								</div>
-								<span>Tab Center</span>
-							</div>
-						</div>
-						<div class="right">
-							<h3><b>Uma nova forma de organização das abas</b></h3>
-							<p>Que tal trazer as abas do topo para a lateral esquerda da tela?</p>
-						</div>
-					</section>
-					<!-- No More 404s -->
-					<section>
-						<div class="left">
-							<div class="project">
-								<div class="project-bg project-bg--no404">
-									<img src="design/no404.png" />
-								</div>
-								<span>No More 404s</span>
-							</div>
-						</div>
-						<div class="right">
-							<h3><b>Página não encontrada? </b></h3>
-							<p>Caso uma página não encontrada possua, veja uma versão salva da página em questão pelo Wayback Machine(web.archive.org).</p>
-						</div>
-					</section>
-					<!-- Universal Search -->
-					<section>
-						<div class="left">
-							<div class="project">
-								<div class="project-bg project-bg--universal">
-									<img src="design/universal.png" />
-								</div>
-								<span>Universal Search</span>
-							</div>
-						</div>
-						<div class="right">
-							<h3><b>Chegue ao melhor da web mais rápido!</b></h3>
-							<p>Comece a digitar em sua Awesome bar e os lugares mais populares, pessoas, e artigos da wikipédia aparecerão para uma melhor navegação.</p>
-						</div>
-					</section>
-					<section>
-						<div style="width: 100%; display: flex; justify-content: center; align-content: center; flex-flow: row wrap;">
-							<div class="project">
-								<div class="project-bg project-bg--pageshot">
-									<img src="design/pageshot.png" />
-								</div>
-								<span>Page Shot</span>
-							</div>
-
-							<div class="project">
-								<div class="project-bg project-bg--minvid">
-									<img src="design/minvid.png" />
-								</div>
-								<span>Min Vid</span>
-							</div>
-
-							<div class="project">
-								<div class="project-bg project-bg--tracking">
-									<img src="design/tracking.png" />
-								</div>
-								<span>Tracking Protection</span>
-							</div>
-
-							<div class="project">
-								<div class="project-bg project-bg--activity">
-									<img src="design/activity.png" />
-								</div>
-								<span>Activity Stream</span>
-							</div>
-
-							<div class="project">
-								<div class="project-bg project-bg--tab">
-									<img src="design/tab.png" />
-								</div>
-								<span>Tab Center</span>
-							</div>
-
-							<div class="project">
-								<div class="project-bg project-bg--no404">
-									<img src="design/no404.png" />
-								</div>
-								<span>No More 404s</span>
-							</div>
-
-							<div class="project">
-								<div class="project-bg project-bg--universal">
-									<img src="design/universal.png" />
-								</div>
-								<span>Universal Search</span>
-							</div>
-						</div>
-					</section>
-
-					<!-- Conhecer um pouco mais dos projetos-->
-					<section data-background="design/estrelas.png">
-						<h2 style="font-family:metanormal_roman;">Vamos conhecer um pouco mais sobre esses projetos?</h2>
-
-					</section>
-
-					<section data-background="design/estrelas.png">
-						<h1 style="font-family:metanormal_roman;"><b>LET'S GO!</b></h1>
-
-					</section>
-				</section>
-
-				<!-- Dinâmica -->
-				<section data-background="design/estrelas.png">
-					<section>
-						<h2 style="font-family:metanormal_roman;">OOOPA! Ainda não acabou!</h2>
-						<h2 style="font-family:metanormal_roman;" class="fragment">Temos um quiz!</h2>
-					</section>
-					<section>
-						<h3 style="font-family:metanormal_roman;">Pergunta 0</h3>
-						<h2 style="font-family:metanormal_roman;" class="fragment"><b>Qual é o <span class="fragment">animal que é mascote do principal navegador da mozilla?</span></b></h2>
-						<h4 style="font-family:metanormal_roman;" class="fragment">Resposta: <b>Panda Vermelho</b></h4>
-					</section>
-					<section>
-						<h3 style="font-family:metanormal_roman;">Pergunta 1</h3>
-						<h2 style="font-family:metanormal_roman;" class="fragment"><b>Cite 3 dos projetos que compõem o Firefox Test Pilot.</b></h2>
-						<h4 style="font-family:metanormal_roman;" class="fragment">Page Shot, Min Vid, Tracking Protection, Activity Stream, Tab Center, No More 404s e Universal Search.</h4>
-					</section>
-					<section>
-						<h3 style="font-family:metanormal_roman;">Pergunta 2</h3>
-						<h2 style="font-family:metanormal_roman;" class="fragment"><b>Um dos projetos muda a forma de visualização da lista de abas. <span class="fragment">Qual o nome dele?</span></b></h2>
-						<h4 style="font-family:metanormal_roman;" class="fragment">Resposta: <b>Tab Center</b>.</h4>
-					</section>
-					<section>
-						<h3 style="font-family:metanormal_roman;">Pergunta 3</h3>
-						<h2 style="font-family:metanormal_roman;" class="fragment"><b>Uma função que está só presente na Navegação Privativa pode estar presente na navegação normal com esse projeto. <span class="fragment">Qual o nome dele?</span></b></h2>
-						<h4 style="font-family:metanormal_roman;" class="fragment">Resposta: <b>Tracking Protection</b>.</h4>
-					</section>
-					<section>
-						<h3 style="font-family:metanormal_roman;">Pergunta 4</h3>
-						<h2 style="font-family:metanormal_roman;" class="fragment"><b>Uma nova página inicial é apresentada com esse projeto. <span class="fragment">Qual o nome dele?</span></b></h2>
-						<h4 style="font-family:metanormal_roman;" class="fragment">Resposta: <b>Activity Stream</b>.</h4>
-					</section>
-
-				</section>
-
-				<!-- Envolva-se -->
-				<section data-background="design/estrelas.png">
-					<h2 style="font-family:metanormal_roman;">Envolva-se!</h2>
-					<img src="design/comunidade.jpg" width="70%" class="fragment" />
-					<a href="http://www.mozillabrasil.org.br" class="fragment">www.mozillabrasil.org.br</a>
-				</section>
-
-				<!-- Obrigado -->
-				<section data-background="design/estrelas.png">
-					<h1>OBRIGADUUU!</h1><br>
-				</section>
-
-				<section data-background="design/estrelas.png">
-					<h1>Alguns Links</h1>
+			<!-- João Paulo Polles -->
+			<section><h2>João Paulo Polles</h2><br>
+				<div class="left">
+					<img src="design/joaopaulo.jpg" style="border-radius: 50rem;">
+				</div>
+				<div class="right">
 					<p>
-						Mozilla - www.mozilla.org<br>
-						Mozilla Brasil - www.mozillabrasil.org.br<br>
-						Reveal.JS - github.com/hakimel/reveal.js<br>
-						Esta apresentação: mozillabrasil.github.io/latinoware-test-pilot/
-					</p>
-				</section>
+						Técnico em Informática, Acadêmico em Tecnologia em Análise e Desenvolvimento de Sistemas na UNIVEL, Desenvolvedor Web Há mais de 5 anos, Entusiasta do Software e Hardware Livre.
+						Atualmente é voluntário na Mozilla e na TvCvel e bolsista desenvolvedor em um projeto na Fundetec em Cascavel/PR.
 
+					</p>
+				</div>
+			</section>
+
+			<!-- Comunidade -->
+			<section><h2>E fazemos parte da</h2><br>
+				<img src="design/profile.png" width="45%" style="background-color: transparent; border:0;" />
+			</section>
+		</section>
+
+		<!-- Mozilla -->
+		<section data-background="design/estrelas.png">
+			<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt;">Você conhece a <b>mozilla?</b></span></h1>
+		</section>
+
+		<section data-background="design/estrelas.png">
+			<p style="font-size:50px;">Somos orgulhosamente</p>
+			<h1>SEM FINS<br>LUCRATIVOS!</h1>
+			<p>Assim, somos livres para inovar em seu nome sem a pressão de compromisso com investidores ou organizações.</p>
+		</section>
+
+		<!-- Firefox -->
+		<section data-background="design/estrelas.png">
+			<h1><span style="font-family:metanormal_roman; letter-spacing: -10pt; font-size:250px;"><b>Firefox</b></span></h1>
+		</section>
+
+		<!-- Estatísticas -->
+		<section data-background="design/estrelas.png">
+			<style scoped>
+				h2{
+					margin-bottom: 2rem;
+				}
+				.browsers{
+					display: flex;
+					justify-content: center;
+					align-content: center;
+				}
+				.browser{
+					display: flex;
+					flex-flow: column;
+					align-items: center;
+					padding: 0 1.5rem;
+					text-align: center;
+				}
+				img{
+					border: 0;
+					background: transparent;
+					box-shadow: none;
+				}
+			</style>
+			<h2>Estatísticas</h2>
+			<div class="browsers">
+				<div class="browser">
+					<img src="design/chrome.png" width="100px" />
+					Chrome<br>62%</div>
+				<div class="browser">
+					<img src="design/firefox.png" width="100px" />
+					<b>Firefox<br>16%</b></div>
+				<div class="browser">
+					<img src="design/ie.png" width="100px" />
+					IE & Edge<br> 12%</div>
+				<div class="browser">
+					<img src="design/safari.png" width="100px" />
+					Safari<br>5%</div>
+				<div class="browser">
+					<img src="design/opera.png" width="100px" />
+					Opera<br>2%</div>
 			</div>
+		</section>
 
-		</div>
+		<!-- Objetivo -->
+		<section data-background="design/estrelas.png">
+			<h2 style="font-family: metanormal_roman">Internet <b>para as pessoas</b>, sem lucro.</h2>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+		</section>
 
-		<script>
+		<!-- O que está por vir -->
+		<section data-background="design/estrelas.png">
+			<h2>O que está por vir</h2>
+			<h3 class="fragment">Firefox 50</h3>
+			<ul>
+				<li class="fragment">Suporte a pesquisa de palavras inteiras no "Localizar na Página", vulgo Ctrl+F.</li>
+				<li class="fragment">Opção de configuração do Ctrl+Tab para alterar entre as abas recentemente utilizada.</li>
+				<li class="fragment">Melhorias na impressão no modo leitura.</li>
+				<li class="fragment">O Firefox irá mostrar um icone de um cadeado tachado caso a página possua campos de senhas inseguros.</li>
+				<li class="fragment">Emoji para todos! O Firefox irá usar Emojis embutidos ao navegador em navegadores sem fontes de Emoji nativos(Linux e Windows 8 e suas versões anteriores)</li>
+			</ul>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+		</section>
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+		<!-- Versões -->
+		<section data-background="design/estrelas.png" id="versoes">
+			<style scoped>
+				img{
+					box-shadow: none;
+				}
+			</style>
+			<section><h2>Versões</h2></section>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
-					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+			<!-- Estável -->
+			<section>
+				<img src="design/estavel.png" width="500px" /><br/>
+				<h3 style="font-family:metanormal_roman;"><b>Firefox</b> 49</h3>
+			</section>
 
-		</script>
+			<!-- Beta -->
+			<section>
+				<img src="design/beta.png" width="500px" />
+				<h3 style="font-family:metanormal_roman;"><b>Firefox</b> Beta 50</h3>
+			</section>
 
-	</body>
+			<!-- Firefox Developer Edition -->
+			<section>
+				<img src="design/developer.png" width="500px" />
+				<h3 style="font-family:metanormal_roman;"><b>Firefox</b> <i>Developer Edition</i> 51</h3>
+			</section>
+
+			<!-- Aurora -->
+			<section>
+				<img src="design/aurora.png" width="400px" />
+				<h3 style="font-family:metanormal_roman;"><b>Firefox</b> Aurora 51</h3>
+			</section>
+
+			<!-- Nightly -->
+			<section>
+				<img src="design/nightly.png" width="500px" />
+				<h3 style="font-family:metanormal_roman;"><b>Firefox</b> Nightly 52</h3>
+			</section>
+		</section>
+
+		<!-- Complementos -->
+		<section data-background="design/estrelas.png">
+			<section>
+				<h2>Complementos</h2>
+				<p class="fragment">Uma forma de adicionar novas funcionalidades no Firefox.</p>
+			</section>
+			<section>
+				<h2>Algumas indicações de<br>Complementos...</h2>
+				<ul>
+					<li class="fragment">AdBlock Plus</li>
+					<li class="fragment">Lightbeam</li>
+					<li class="fragment">FireFTP</li>
+					<li class="fragment">PixelZoomer</li>
+					<li class="fragment">Empty Cache Button</li>
+					<li class="fragment">RescueTime</li>
+				</ul>
+			</section>
+		</section>
+
+		<!-- Complementos -->
+		<section data-background="design/estrelas.png">
+			<p>Nas versões Beta, Developer Edition/Aurora e Nightly são desenvolvidas
+				e testadas novas funcionalidades que um dia estarão na versão estável do
+				navegador.</p>
+			<p class="fragment">Existem experimentos que podem trazer muito ao navegador e precisam de
+				sua ajuda para o desenvolvimento e decisão se irão implementar no firefox/desenvolver um complemento.</p>
+
+		</section>
+
+		<!-- Firefox Test Pilot -->
+		<section data-background="design/estrelas.png">
+			<h1 style="font-family:metanormal_roman;"><b>Firefox</b> Test Pilot</h1>
+
+		</section>
+
+		<!-- Firefox Test Pilot -->
+		<section data-background="design/estrelas.png">
+			<h2 style="font-family:metanormal_roman;"><b>O que é?</b></h2>
+			<ul>
+				<li class="fragment">Teste de Possíveis Novas Funcionalidades</li>
+				<li class="fragment">Essas funcionalidades podem ou não serem implementadas no Firefox</li>
+				<li class="fragment">Por isso que sua opinião é importante!</li>
+			</ul>
+		</section>
+
+		<!-- Projetos -->
+		<section data-background="design/estrelas.png">
+			<style scoped>
+				h1,h2,h3{
+					font-family: metanormal_roman;
+					font-weight: bold;
+				}
+			</style>
+			<section>
+				<h2>Vamos aos projetos!</h2>
+			</section>
+			<!-- Page Shot -->
+			<section>
+				<div class="left">
+					<div class="project">
+						<div class="project-bg project-bg--pageshot">
+							<img src="design/pageshot.png" />
+						</div>
+						<span>Page Shot</span>
+					</div>
+				</div>
+				<div class="right">
+					<h3><b>Capture sua tela!</b></h3>
+					<p>Capture sua tela ou parte dela com uma ferramenta intuitiva e simples.</p>
+				</div>
+			</section>
+			<!-- Min Vid -->
+			<section>
+				<div style="left">
+					<div class="project">
+						<div class="project-bg project-bg--minvid">
+							<img src="design/minvid.png" />
+						</div>
+						<span>Min Vid</span>
+					</div>
+				</div>
+				<div class="right">
+					<h3><b>Assista a vídeos em qualquer página!</b></h3>
+					<p>Assista a vídeos do YouTube e Vímeo em qualquer página que você estiver.</p>
+				</div>
+			</section>
+			<!-- Tracking Protection -->
+			<section>
+				<div class="left">
+					<div class="project">
+						<div class="project-bg project-bg--tracking">
+							<img src="design/tracking.png" />
+						</div>
+						<span>Tracking Protection</span>
+					</div>
+				</div>
+				<div class="right">
+					<h3><b>Proteção contra rastreamento</b></h3>
+					<p>A proteção que estava presente no modo de navegação privado agora em todas as páginas.</p>
+				</div>
+			</section>
+			<!-- Activity Stream -->
+			<section>
+				<div class="left">
+					<div class="project">
+						<div class="project-bg project-bg--activity">
+							<img src="design/activity.png" />
+						</div>
+						<span>Activity Stream</span>
+					</div>
+				</div>
+				<div class="right">
+					<h3><b>Uma nova página inicial</b></h3>
+					<p>Uma página inicial reimaginada com seu histórico de acesso, deixando uma forma fácil de encontrar exatamente o que você procura.</p>
+				</div>
+			</section>
+			<!-- Tab Center -->
+			<section>
+				<div class="left">
+					<div class="project">
+						<div class="project-bg project-bg--tab">
+							<img src="design/tab.png" />
+						</div>
+						<span>Tab Center</span>
+					</div>
+				</div>
+				<div class="right">
+					<h3><b>Uma nova forma de organização das abas</b></h3>
+					<p>Que tal trazer as abas do topo para a lateral esquerda da tela?</p>
+				</div>
+			</section>
+			<!-- No More 404s -->
+			<section>
+				<div class="left">
+					<div class="project">
+						<div class="project-bg project-bg--no404">
+							<img src="design/no404.png" />
+						</div>
+						<span>No More 404s</span>
+					</div>
+				</div>
+				<div class="right">
+					<h3><b>Página não encontrada? </b></h3>
+					<p>Caso uma página não encontrada possua, veja uma versão salva da página em questão pelo Wayback Machine(web.archive.org).</p>
+				</div>
+			</section>
+			<!-- Universal Search -->
+			<section>
+				<div class="left">
+					<div class="project">
+						<div class="project-bg project-bg--universal">
+							<img src="design/universal.png" />
+						</div>
+						<span>Universal Search</span>
+					</div>
+				</div>
+				<div class="right">
+					<h3><b>Chegue ao melhor da web mais rápido!</b></h3>
+					<p>Comece a digitar em sua Awesome bar e os lugares mais populares, pessoas, e artigos da wikipédia aparecerão para uma melhor navegação.</p>
+				</div>
+			</section>
+			<section>
+				<div style="width: 100%; display: flex; justify-content: center; align-content: center; flex-flow: row wrap;">
+					<div class="project">
+						<div class="project-bg project-bg--pageshot">
+							<img src="design/pageshot.png" />
+						</div>
+						<span>Page Shot</span>
+					</div>
+
+					<div class="project">
+						<div class="project-bg project-bg--minvid">
+							<img src="design/minvid.png" />
+						</div>
+						<span>Min Vid</span>
+					</div>
+
+					<div class="project">
+						<div class="project-bg project-bg--tracking">
+							<img src="design/tracking.png" />
+						</div>
+						<span>Tracking Protection</span>
+					</div>
+
+					<div class="project">
+						<div class="project-bg project-bg--activity">
+							<img src="design/activity.png" />
+						</div>
+						<span>Activity Stream</span>
+					</div>
+
+					<div class="project">
+						<div class="project-bg project-bg--tab">
+							<img src="design/tab.png" />
+						</div>
+						<span>Tab Center</span>
+					</div>
+
+					<div class="project">
+						<div class="project-bg project-bg--no404">
+							<img src="design/no404.png" />
+						</div>
+						<span>No More 404s</span>
+					</div>
+
+					<div class="project">
+						<div class="project-bg project-bg--universal">
+							<img src="design/universal.png" />
+						</div>
+						<span>Universal Search</span>
+					</div>
+				</div>
+			</section>
+
+			<!-- Conhecer um pouco mais dos projetos-->
+			<section data-background="design/estrelas.png">
+				<h2 style="font-family:metanormal_roman;">Vamos conhecer um pouco mais sobre esses projetos?</h2>
+
+			</section>
+
+			<section data-background="design/estrelas.png">
+				<h1 style="font-family:metanormal_roman;"><b>LET'S GO!</b></h1>
+
+			</section>
+		</section>
+
+		<!-- Dinâmica -->
+		<section data-background="design/estrelas.png">
+			<section>
+				<h2 style="font-family:metanormal_roman;">OOOPA! Ainda não acabou!</h2>
+				<h2 style="font-family:metanormal_roman;" class="fragment">Temos um quiz!</h2>
+			</section>
+			<section>
+				<h3 style="font-family:metanormal_roman;">Pergunta 0</h3>
+				<h2 style="font-family:metanormal_roman;" class="fragment"><b>Qual é o <span class="fragment">animal que é mascote do principal navegador da mozilla?</span></b></h2>
+				<h4 style="font-family:metanormal_roman;" class="fragment">Resposta: <b>Panda Vermelho</b></h4>
+			</section>
+			<section>
+				<h3 style="font-family:metanormal_roman;">Pergunta 1</h3>
+				<h2 style="font-family:metanormal_roman;" class="fragment"><b>Cite 3 dos projetos que compõem o Firefox Test Pilot.</b></h2>
+				<h4 style="font-family:metanormal_roman;" class="fragment">Page Shot, Min Vid, Tracking Protection, Activity Stream, Tab Center, No More 404s e Universal Search.</h4>
+			</section>
+			<section>
+				<h3 style="font-family:metanormal_roman;">Pergunta 2</h3>
+				<h2 style="font-family:metanormal_roman;" class="fragment"><b>Um dos projetos muda a forma de visualização da lista de abas. <span class="fragment">Qual o nome dele?</span></b></h2>
+				<h4 style="font-family:metanormal_roman;" class="fragment">Resposta: <b>Tab Center</b>.</h4>
+			</section>
+			<section>
+				<h3 style="font-family:metanormal_roman;">Pergunta 3</h3>
+				<h2 style="font-family:metanormal_roman;" class="fragment"><b>Uma função que está só presente na Navegação Privativa pode estar presente na navegação normal com esse projeto. <span class="fragment">Qual o nome dele?</span></b></h2>
+				<h4 style="font-family:metanormal_roman;" class="fragment">Resposta: <b>Tracking Protection</b>.</h4>
+			</section>
+			<section>
+				<h3 style="font-family:metanormal_roman;">Pergunta 4</h3>
+				<h2 style="font-family:metanormal_roman;" class="fragment"><b>Uma nova página inicial é apresentada com esse projeto. <span class="fragment">Qual o nome dele?</span></b></h2>
+				<h4 style="font-family:metanormal_roman;" class="fragment">Resposta: <b>Activity Stream</b>.</h4>
+			</section>
+
+		</section>
+
+		<!-- Envolva-se -->
+		<section data-background="design/estrelas.png">
+			<h2 style="font-family:metanormal_roman;">Envolva-se!</h2>
+			<img src="design/comunidade.jpg" width="70%" class="fragment" />
+			<a href="http://www.mozillabrasil.org.br" class="fragment">www.mozillabrasil.org.br</a>
+		</section>
+
+		<!-- Obrigado -->
+		<section data-background="design/estrelas.png">
+			<h1>OBRIGADUUU!</h1><br>
+		</section>
+
+		<section data-background="design/estrelas.png">
+			<h1>Alguns Links</h1>
+			<p>
+				Mozilla - www.mozilla.org<br>
+				Mozilla Brasil - www.mozillabrasil.org.br<br>
+				Reveal.JS - github.com/hakimel/reveal.js<br>
+				Esta apresentação: mozillabrasil.github.io/latinoware-test-pilot/
+			</p>
+		</section>
+
+	</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+
+	// Full list of configuration options available here:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+		transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+		// Optional libraries used to extend on reveal.js
+		dependencies: [
+			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+			{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+			// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+			// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+		]
+	});
+
+</script>
+
+</body>
 </html>
